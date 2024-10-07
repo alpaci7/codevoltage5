@@ -22,7 +22,12 @@
     transform: translate(-50%, -50%);
 
 }
+.course-knowledge img{
+    width: 200px;
+    height: 200px;
+    margin: 80px 20%;
 
+}
 
 .course-topic, .course-duration, .course-level, .course-price{
     display: flex;
@@ -337,7 +342,6 @@
         grid-template-columns: repeat(6,1fr);
         padding-left: 150px;
         padding-top: 50px;
-        margin: 20px;
         
     }
 
@@ -347,7 +351,7 @@
         height: fit-content;
         margin: 50px;
         padding: 50px;
-        margin-top: 100px;
+        margin-top: 200px;
     }
 
     .course-description{
@@ -377,9 +381,8 @@
         margin: 10px 35%;
     }
     .course-knowledge{
-        width: 900px;
+        width: 300px;
         height: auto;
-        margin: 10px auto;
     
     }
     .unstick-button Button{
