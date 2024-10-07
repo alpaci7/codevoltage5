@@ -1,7 +1,7 @@
 import './styles/App.css';
 import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 import { useState } from 'react';
-import Home from "./pages/Home";
+import Home from "./pages/Home1";
 import Home1 from "./pages/Home1";
 import Test from "./pages/Test";
 
@@ -29,7 +29,7 @@ function App() {
       <Routes>
       <Route path='/test' element={<Test/>}/>
 
-        <Route path='/' element={<Home1 user={"none"} setIsAuthenticated={setIsAuthenticated} setUser={setUser} checked={checked} setChecked={setChecked}/>}/>
+        <Route path='/' element={<Home user={"none"} setIsAuthenticated={setIsAuthenticated} setUser={setUser} checked={checked} setChecked={setChecked}/>}/>
         <Route path='/login' element={<Connect setIsAuthenticated={setIsAuthenticated} STATUS={"login"} MESSAGE={"none"} setUser={setUser} checked={checked} setChecked={setChecked}/>}/>
         <Route path='/login/success' element={<Connect setIsAuthenticated={setIsAuthenticated} STATUS={"login"} MESSAGE={"success"} setUser={setUser} checked={checked} setChecked={setChecked}/>}/>
 
