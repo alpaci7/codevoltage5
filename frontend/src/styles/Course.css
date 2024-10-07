@@ -1,0 +1,395 @@
+.course-container{
+    margin-top: 80px;
+}
+
+.course-image img, .course-video iframe{
+    width: 100%;
+    height: 400px;
+}
+.course-info-container{
+    position: relative;
+    text-align: center;
+}
+.course-image img{
+    opacity: 0.75;
+
+}
+.course-info{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.course-topic, .course-duration, .course-level, .course-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.course-price h2{
+    width: 25%;
+}
+
+.course-topic h2, .course-duration h2, .course-level h2, .course-price h2{
+    color: white;
+    
+}
+.contenu1{
+    margin-top: 28px;
+    color: white;
+}
+.contenu{
+    margin-top: 28px;
+    color: var(--color);
+}
+
+.course-cible, .course-objectif{
+    background-color: var(--course-container);
+    width: 80%;
+    border: 2px solid var(--heading-color);
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.course-cible ul, .course-objectif ul{
+    margin: 0px;
+    padding: 0px;
+}
+.course-cible ul li, .course-objectif ul li{
+    background-color: var(--course-container-container-children);
+    border: 1px solid var(--heading-color);
+    list-style: none;
+    padding: 10px;
+    margin: 20px 8px;
+}
+
+.images-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px;
+    padding: 20px 5px;
+    width: 70%;
+}
+.image1 img, .image2 img, .image3 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #81b1c0;
+    box-shadow: 2px 1px 5px #ccc , -2px -1px 5px #ccc;
+   
+}
+.image1{
+    grid-column:1/2;
+
+}
+.image2{
+    transform: rotate(-90deg);
+    grid-column:3/4;
+
+}
+
+.image3{
+    transform: rotate(-90deg);
+    grid-column:2/3;
+
+}
+.header-stick{
+    position : fixed;
+    top : 80px;
+    width: 100%;
+    font-size: 18px; 
+    height: 30px; 
+    margin-left: -20px; 
+    padding: 5px 10px; 
+    background-color: var(--container-children);
+    z-index: 1;
+  
+}
+.first-month-stick{
+    position : fixed;
+    top : 97px;
+    width: 100%;
+    font-size: 18px; 
+    height: 30px; 
+    margin-left: -20px; 
+    padding: 5px 10px; 
+    background-color: var(--container-children);
+    z-index: 1;
+
+}
+.first-part-stick{
+    position : fixed;
+    top : 128px;
+    width: 100%;
+    font-size: 18px; 
+    height: 30px; 
+    margin-left: -20px; 
+    padding: 5px 20px; 
+    background-color: var(--container-children);
+    z-index: 1;
+
+}
+.second-part-stick{
+    position : fixed;
+    top : 166px;
+    width: 100%;
+    font-size: 18px; 
+    height: 30px; 
+    margin-left: -20px; 
+    padding: 5px 20px; 
+    background-color: var(--container-children);
+    z-index: 1;
+
+}
+
+.second-month-stick{
+    position : fixed;
+    top : 97px;
+    width: 100%;
+    font-size: 18px; 
+    height: 30px; 
+    margin-left:-20px; 
+    padding: 5px 10px; 
+    background-color: var(--container-children);
+    z-index: 1;
+
+}
+
+.third-part-stick{
+    position : fixed;
+    top : 128px;
+    width: 95%;
+    font-size: 18px; 
+    height: 55px; 
+    margin-left: -20px; 
+    padding: 5px 20px; 
+    background-color: var(--container-children);
+    z-index: 1;
+
+}
+
+.third-month-stick{
+    position : fixed;
+    top : 97px;
+    width: 100%;
+    font-size: 18px; 
+    height: 30px; 
+    margin-left: -20px; 
+    padding: 5px 10px; 
+    background-color: var(--container-children);
+    z-index: 1;
+
+}
+
+.forth-part-stick{
+    position : fixed;
+    top : 128px;
+    width: 100%;
+    font-size: 18px; 
+    height: 55px; 
+    margin-left: -30px; 
+    padding: 5px 20px; 
+    background-color: var(--container-children);
+    z-index: 1;
+
+}
+.unstick{
+    position: relative;
+    z-index: 0;
+    color: red;
+    text-align: center;
+    font-weight: 900;
+}
+.unstick-button{
+    position: relative;
+    margin: 10px 15%;
+    width: 70%;
+
+}
+.unstick-button Button{
+    width: 100%;
+}
+
+.course-button{
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    margin: 10px 20%;
+
+}
+.course-button Button:hover{
+    border-radius: 20px;
+}
+.course-description{
+    width: 90%;
+    background-color: var(--course-container-container);
+    margin: 20px auto;
+    border: 3px solid #898989;
+    border-radius: 20px;
+    z-index: 0;
+    padding: 20px 0;
+}
+.ol{
+    background-color: var(--course-container-container);
+    padding: 20px 50px;
+
+}
+@media screen and (min-width : 800px) {
+    .image1 img, .image2 img, .image3 img{
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: 1px solid #81b1c0;
+        box-shadow: 2px 1px 5px #ccc , -2px -1px 5px #ccc;
+       
+    }
+    .images-container{
+        margin-left: 120px;
+    }
+}
+@media screen and (min-width : 1300px) {
+    .course-image img{
+        width: 120%;
+        height: 650px;
+        opacity: 1;
+        margin-left:0;
+    }
+    .course-video iframe{
+        width: 100%;
+        height: 600px;
+    }
+    .course-video{
+        width: 45%;
+        margin: 100px 50px;
+
+    }
+    .course-info-container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: start;
+        background-color: var(--course-container);
+
+    }
+    .course-info{
+        width: 50%;
+        position: relative;
+        top: 0;
+        left: 10%;
+        transform: none;
+    }
+    .course-topic h2, .course-duration h2, .course-level h2, .course-price h2{
+        color: var(--heading-color);
+        
+    }
+    .contenu1{
+        margin-top: 28px;
+        color: var(--color);
+    }
+    .course-cible-video{
+        display: flex;
+        text-align: start;
+    }
+    .course-cible{
+        width: 50%;
+        margin: 40px 50px;
+    }
+    .images-container{
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        margin: 20px 8px;
+        padding: 20px 8px;
+        grid-gap: 80px;
+        height: 1150px;
+    }
+    .image1 img, .image2 img, .image3 img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 1px solid #81b1c0;
+        box-shadow: 2px 1px 5px #ccc , -2px -1px 5px #ccc;
+       
+    }
+    .image1{
+        grid-column: 1;
+        grid-row: 1/2;
+        margin-left: 15%;
+    }
+    .image2{
+        grid-column: 1;
+        grid-row: 2/3;
+        margin-left: 15%;
+
+    }
+    .image3{
+        grid-column: 1;
+        grid-row: 3/4;
+        margin-left: 15%;
+
+    }
+    .course-objectif-images{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        padding-left: 150px;
+        padding-top: 50px;
+        margin: 20px;
+        
+    }
+
+    .course-objectif{
+        grid-row: 1/2;
+        grid-column: 2/6;
+        height: fit-content;
+        margin: 50px;
+        padding: 50px;
+        margin-top: 100px;
+    }
+
+    .course-description{
+        width: 60%;
+        margin: 10px auto;
+    }
+    .header-stick, .first-month-stick, .second-month-stick,.third-month-stick{
+        width: 58.9%;
+        margin-left: 0px;
+    }
+    .first-part-stick, .second-part-stick,.forth-part-stick,.third-part-stick{
+        width: 57.85%;
+        margin-left: 0px;
+
+    }
+    .unstick-button{
+        position: relative;
+        margin: 10px 35%;
+        width: 50%;
+
+    }
+ 
+    .course-button{
+        position: fixed;
+        bottom: 50px;
+        width: 50%;
+        margin: 10px 35%;
+    }
+    .course-knowledge{
+        width: 900px;
+        height: auto;
+        margin: 10px auto;
+    
+    }
+    .unstick-button Button{
+        width: 60%;
+    }
+    .ol{
+        padding-left: 100px;
+    }
+    .course-price h2{
+        width: 10%;
+    }
+   
+}
