@@ -68,6 +68,9 @@
     margin-bottom: 40px;
     text-align: center;
 }
+.main-container p {
+    font-size: 23px;
+}
 
 
 @media screen and (min-width : 700px) {
