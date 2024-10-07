@@ -437,7 +437,7 @@ const IoT = ({user,checked, setChecked}) => {
                                         </ol>
                                     </div>
 
-                                    <div className='course-knowledge'>
+                                    <div>
                                         <h2>{t('What used in this course :')}</h2>
                                         <ImageSlider images={images}/>
                                     </div>
